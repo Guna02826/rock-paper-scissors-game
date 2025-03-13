@@ -5,6 +5,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1rem;
 }
 
 h1 {
@@ -52,4 +53,58 @@ h1 {
 .redText,
 #computerScoreDisplay {
   color: hsl(0, 84%, 60%);
+}
+
+/* Responsive Styles for tablets and smaller screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+  
+  .choices button {
+    font-size: 6rem;
+    min-width: 140px;
+    margin: 0 8px;
+  }
+  
+  #playerDisplay,
+  #computerDisplay {
+    font-size: 2rem;
+  }
+  
+  #resultDisplay {
+    font-size: 4rem;
+    margin: 20px 0;
+  }
+  
+  .scoreDisplay {
+    font-size: 3rem;
+  }
+}
+
+/* Responsive Styles for mobile devices */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  .choices button {
+    font-size: 4.5rem;
+    min-width: 120px;
+    margin: 0 5px;
+  }
+  
+  #playerDisplay,
+  #computerDisplay {
+    font-size: 1.8rem;
+  }
+  
+  #resultDisplay {
+    font-size: 3.5rem;
+    margin: 15px 0;
+  }
+  
+  .scoreDisplay {
+    font-size: 2.5rem;
+  }
 }
